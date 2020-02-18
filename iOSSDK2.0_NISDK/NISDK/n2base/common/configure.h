@@ -69,8 +69,11 @@ typedef enum {
 
 
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+static unsigned kCalUnits = NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday;
+#else
 static unsigned kCalUnits = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit;
-
+#endif
 
 static NSString * const kBaseURLString =    @"http://peopleinhoju.com/app_pointsplus";
 
