@@ -1857,6 +1857,7 @@ NSString * NJPenCommManagerWriteIdleNotification = @"NJPenCommManagerWriteIdleNo
             range.location = dataPosition;
             [packetData getBytes:&battLevel range:range];
             self.penState->battLevel = battLevel;
+            self.penStatus2->battLevel = battLevel;
             dataPosition ++;
             
             range.location = dataPosition;
