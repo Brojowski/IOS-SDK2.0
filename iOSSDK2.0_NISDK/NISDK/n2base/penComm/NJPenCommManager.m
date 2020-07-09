@@ -9,7 +9,7 @@
 #import "NeoPenService.h"
 #import "NJCommon.h"
 #define SUPPORT_SDK2
-#undef SUPPORT_PEN_LOCALSUBNAME
+#define SUPPORT_PEN_LOCALSUBNAME
 
 #define kPenCommMan_Pen_Register @"penRegister"
 #define kPenCommMan_Pen_Reg_UUID @"regUuid"
